@@ -1,4 +1,4 @@
-# Ganza_Challenge
+# Ganza_Challenge  
 # Smart Agriculture Kotlin App
 
 ## What I Built
@@ -9,6 +9,9 @@ This is a simple offline-first Android app built with Kotlin using Jetpack Compo
 - View recorded farmer data.
 - Perform basic **CRUD operations** (Create, Read, Update, Delete) on farmer data.
 - Work completely **offline**, using **SQLite** for local storage—ideal for rural areas with limited internet access.
+
+> ⚠️ **Note**: For this version, I manually used **SQLite** to manage local data and deliver a working app in time.  
+> In future updates, **Room** (an ORM built on SQLite) will be adopted for better structure and maintainability.
 
 ---
 
@@ -42,12 +45,3 @@ When internet access becomes available, syncing to a remote server could be impl
   - Use WorkManager or background services to sync automatically when internet is detected.
 - 🧠 **Conflict Resolution**: Add a `last_updated` timestamp field for resolving conflicts during sync.
 - ✅ **Sync Status Flags**: Mark records as `synced` or `pending`.
-
-
-
-
-
-
-
-
-
